@@ -1,8 +1,7 @@
 <!-- HTML structure for a Netflix homepage -->
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Set character encoding and viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,26 +9,44 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Set title of the page -->
     <title>Netflix | HomePage</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Hero section with background image -->
-    <section class="w-[100%] h-[100vh] bg-[url('images/Netflix.jpg')] bg-center bg-cover">
-        <!-- Overlay for background image -->
-        <div class="w-[100%] h-[100vh] bg-[rgba(0,0,0,0.5)]">
-            <!-- Header section -->
-            <header class="max-w-[1170px] mx-auto">
-                <!-- Header content grid -->
-                <div class="grid sm:grid-cols-2 grid-cols-[30%_auto] px-[10px] items-center">
-                    <!-- Netflix logo -->
-                    <figure>
-                        <img src="images/Netflix-Logo.svg" class="w-[148px]" alt="Netflix" />
-                    </figure>
-                    <!-- Language selector and Sign in button -->
-                    <div class="flex justify-end gap-[10px]">
-                        <div class="relative">
-                            <!-- Language selector icon -->
-                            <svg class="absolute text-white top-[9px] left-[5px]" xmlns="http://www.w3.org/2000/svg" fill="none" width="16" height="16" viewBox="0 0 16 16" role="img" data-icon="LanguagesSmall" aria-hidden="true">
+    <section
+      class="w-[100%] h-[100vh] bg-[url('images/Netflix.jpg')] bg-center bg-cover"
+    >
+      <!-- Overlay for background image -->
+      <div class="w-[100%] h-[100vh] bg-[rgba(0,0,0,0.5)]">
+        <!-- Header section -->
+        <header class="max-w-[1170px] mx-auto">
+          <!-- Header content grid -->
+          <div
+            class="grid sm:grid-cols-2 grid-cols-[30%_auto] px-[10px] items-center"
+          >
+            <!-- Netflix logo -->
+            <figure>
+              <img
+                src="images/Netflix-Logo.svg"
+                class="w-[148px]"
+                alt="Netflix"
+              />
+            </figure>
+            <!-- Language selector and Sign in button -->
+            <div class="flex justify-end gap-[10px]">
+              <div class="relative">
+                <!-- Language selector icon -->
+                <svg
+                  class="absolute text-white top-[9px] left-[5px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  role="img"
+                  data-icon="LanguagesSmall"
+                  aria-hidden="true"
+                >
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -37,66 +54,130 @@
                     fill="currentColor"
                   ></path>
                 </svg>
-                            <!-- Language selector dropdown -->
-                            <select name="" id="" class="bg-[black] text-white border-[1px] border-[white] sm:p-[5px_25px] p-[5px_20px] rounded-[5px]">
+                <!-- Language selector dropdown -->
+                <select
+                  name=""
+                  id=""
+                  class="bg-[black] text-white border-[1px] border-[white] sm:p-[5px_25px] p-[5px_20px] rounded-[5px]"
+                >
                   <option value="">English</option>
                   <option value="">Persian</option>
                 </select>
-                        </div>
-                        <!-- Sign in button -->
-                        <button class="bg-[red] px-[10px] rounded-[5px] text-white">
+              </div>
+              <!-- Sign in button -->
+              <button class="bg-[red] px-[10px] rounded-[5px] text-white">
                 Sign in
               </button>
-                    </div>
-                </div>
-            </header>
-            <!-- Main content -->
-            <div class="max-w-[1170px] mx-auto sm:py-[150px] py-[50px] text-center text-white">
-                <!-- Main heading -->
-                <h1 class="sm:text-[50px] text-[35px] font-bold">
-                    Unlimited movies, TV shows, and more
-                </h1>
-                <!-- Subheading -->
-                <h4 class="text-[20px] py-[15px]">Watch anywhere. Cancel anytime.</h4>
-                <!-- Description -->
-                <p class="text-[20px]">
-                    Ready to watch? Enter your email to create or restart your membership.
-                </p>
-                <!-- Email input and Get Started button -->
-                <div class="max-w-[700px] sm:px-[10px] px-[40px] mx-auto mt-[30px]">
-                    <form action="" class="grid gap-[20px] sm:grid-cols-[70%_auto] grid-cols-1">
-                        <input type="text" class="border-[1px] pl-[20px] border-[#ccc] h-[50px] bg-[transparent]" placeholder="Email or mobile number" />
-                        <button class="bg-[red] px-[10px] rounded-[5px] text-white py-[5px] hover:bg-[rgb(193,17,25)] duration-300 text-[25px]">
-                Get Started >
-              </button>
-                    </form>
-                </div>
             </div>
+          </div>
+        </header>
+        <!-- Main content -->
+        <div
+          class="max-w-[1170px] mx-auto sm:py-[150px] py-[50px] text-center text-white"
+        >
+          <!-- Main heading -->
+          <h1 class="sm:text-[50px] text-[35px] font-bold">
+            Unlimited movies, TV shows, and more
+          </h1>
+          <!-- Subheading -->
+          <h4 class="text-[20px] py-[15px]">Watch anywhere. Cancel anytime.</h4>
+          <!-- Description -->
+          <p class="text-[20px]">
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </p>
+          <!-- Email input and Get Started button -->
+          <div class="max-w-[700px] sm:px-[10px] px-[40px] mx-auto mt-[30px]">
+            <form
+              action=""
+              class="grid gap-[20px] sm:grid-cols-[70%_auto] grid-cols-1"
+            >
+              <input
+                type="text"
+                class="border-[1px] pl-[20px] border-[#ccc] h-[50px] bg-[transparent]"
+                placeholder="Email or mobile number"
+              />
+              <div>
+                <button
+                  class="bg-[red] px-[50px] sm:p-[10px] rounded-[5px] text-white py-[5px] hover:bg-[rgb(193,17,25)] duration-300 text-[25px]"
+                >
+                  Get Started >
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Secondary section for TV devices -->
-    <section class="w-[100%] bg-[black] border-t-[8px] border-t-[#605d5d] sm:py-[50px] py-[50px]">
-        <div class="max-w-[1170px] mx-auto px-[15px]">
-            <div class="grid items-center grid-cols-1 sm:grid-cols-2">
-                <!-- Content about watching on TV -->
-                <div class="items-center justify-center text-white sm:items-start">
-                    <h2 class="sm:text-[50px] text-[40px] font-bold">
-                        Enjoy on your TV
-                    </h2>
-                    <p class="sm:text-[24px] text-[20px] py-[30px]">
-                        Watch on Smart TVs, Playstation, Xbox, Chromecast,<br /> Apple TV, Blu-ray players, and more.
-                    </p>
-                </div>
-                <!-- TV image and video -->
-                <figure class="relative">
-                    <video class="w-[72%] left-[15%] bottom-[20%] absolute z-[1]">
+    <section
+      class="w-[100%] bg-[black] border-t-[8px] border-t-[#605d5d] sm:py-[50px] py-[50px]"
+    >
+      <div class="max-w-[1170px] mx-auto px-[15px] sm:py-[80px]">
+        <div class="grid items-center grid-cols-1 sm:grid-cols-2">
+          <!-- Content about watching on TV -->
+          <div
+            class="items-center justify-center text-center text-white sm:text-start"
+          >
+            <h2 class="sm:text-[50px] text-[40px] font-bold">
+              Enjoy on your TV
+            </h2>
+            <p class="sm:text-[24px] text-[20px] py-[50px]">
+              Watch on Smart TVs, Playstation, Xbox, Chromecast,<br />
+              Apple TV, Blu-ray players, and more.
+            </p>
+          </div>
+          <!-- TV image and video -->
+          <figure class="relative">
+            <video class="w-[72%] left-[15%] bottom-[20%] absolute z-[1]">
               <source src="images/Netflix.m4v" />
             </video>
-                    <img class="relative z-[2]" src="images/tv.png" alt="TV" />
-                </figure>
-            </div>
+            <img class="relative z-[2]" src="images/tv.png" alt="TV" />
+          </figure>
         </div>
+      </div>
     </section>
-</body>
 
+    <section
+      class="sm:px-[80px] w-[100%] bg-[black] border-t-[8px] border-t-[#605d5d] sm:py-[50px] py-[50px]"
+    >
+      <div class="max-w-[1170px] px-[15px] sm:py-[20px]">
+        <div class="grid items-center grid-cols-1 sm:grid-cols-2">
+          <!-- TV image and video -->
+          <figure class="relative order-2 sm:order-1">
+            <img src="images/mobile-netflix.jpg" alt="Engoy" />
+            <div
+              class="sm:w-[60%] w-[50%] absolute sm:left-[20%] left-[25%] rounded-lg border-[1px] border-[#ccc] bottom-[0px] bg-[black] grid grid-cols-[70%_auto]"
+            >
+              <div class="grid grid-cols-[25%_auto] p-[10px]">
+                <img src="images/pexels1.jpg" alt="" />
+                <div class="text-white">
+                  <h3>Stranger Things</h3>
+                  <b class="text-[blue]">Downloading...</b>
+                </div>
+              </div>
+              <div>
+                <img
+                  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif"
+                />
+              </div>
+            </div>
+
+            <!-- Content about watching on TV -->
+          </figure>
+
+          <div
+            class="items-center justify-center text-center text-white sm:text-start pl-[40px] sm:order-2 order-1 sm:leading-[50px] leading-[40px]"
+          >
+            <h2 class="sm:text-[50px] text-[35px] font-bold">
+              Download your shows to watch offline
+            </h2>
+            <p class="sm:text-[24px] text-[20px] pt-[50px] leading-[30px]">
+              Save your favorites easily and always have something to watch.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
